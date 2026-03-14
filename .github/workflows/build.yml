@@ -6,6 +6,9 @@ on:
       - "v*"          # 推送 tag（如 v1.0.0）时触发
   workflow_dispatch:  # 也可以在 GitHub 网页手动触发
 
+permissions:
+  contents: write
+
 jobs:
   build:
     strategy:
